@@ -32,11 +32,11 @@ class BookDetailsActivity : AppCompatActivity() {
             intent2.putExtra("nombre",nombre.text)
             intent2.putExtra("año",año.text)
 
-            cadena="Numero: ${nombre.text} Titulo${año.text} ${intent.getStringExtra("array")}"
+            cadena="Nombre: ${nombre.text} Titulo${año.text} ${intent.getStringExtra("array")}"
 
             intent2.putExtra("titulo",intent.getStringExtra("titulo"))
             intent2.putExtra("numero",intent.getStringExtra("numero"))
-            intent2.putExtra("array",intent.getStringExtra("array"))
+            intent2.putExtra("array",cadena)
             startActivity(intent2)
 
         }
